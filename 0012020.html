@@ -9,7 +9,7 @@
     .axis--x path { display: none; }
     .line {
         fill: none;
-        stroke: black;
+        stroke: white;
         stroke-width: 3;
     }
     .dot {
@@ -118,7 +118,7 @@
 
   bar.append("circle") // Uses the enter().append() method
       .attr("class", "dot") // Assign a class for styling
-      .attr("cx", function(d, i) { return xScale(d[0]) + xScale.bandwidth() / 2; })
+      .attr("cx", function(d, i) { return xScale(d[0]) + xScale.bandwidth() / 10; })
       .attr("cy", function(d) { return yScale(d[1]); })
       .attr("r", 5);
 
